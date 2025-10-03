@@ -5,11 +5,65 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style/style.css">
+    <script>
+        function enviarFormulario() {
+            alert("Formulário enviado")
+        }
+    </script>
     <title>Página de Captura</title>
 </head>
 
 <body>
+    <div class="container">
+        <header>
+            <h1>participe do workshop que vai mudar o seu negócio</h1>
+        </header>
 
+        <div class="principal">
+            <img src="images/people.jpg" alt="people">
+
+            <div class="captura">
+                <h2>garanta o seu lugar no workshop do maior especialista em marketing da atualidade</h2>
+
+                <p>Neste evento, você vai aprender todos os segredos que vão te fazer um empreendedor de sucesso sem
+                    precisar contar com a sorte</p>
+
+                <form action="#" method="get">
+                    <input type="text" name="nNome" placeholder="Nome">
+                    <input type="text" name="nEmail" placeholder="E-mail">
+
+                    <select name="nCidade" id="cidade">
+                        <optgroup label="Sudeste">
+                            <option value="RJ">Rio de Janeiro</option>
+                            <option value="SP">São Paulo</option>
+                            <option value="MG">Belo Horizonte</option>
+                        </optgroup>
+                    </select>
+                </form>
+
+                <input type="button" name="nBotao" value="inscrever-se" onclick="enviarFormulario()">
+            </div>
+        </div>
+
+        <div class="palestrante">
+            <img src="images/face.jpg" alt="palestrante">
+
+            <div class="descricao">
+                <h3>O Palestrante</h3>
+
+                <p>
+                    Carlos Fontana é conhecido por dar palestras que abalam a estrutura do marketing tradicional.
+                    Prepare-se para sair do evento com uma nova visão do que é possível ser feito para seu
+                    negócio decolar.
+                </p>
+
+                <p>
+                    Formado em Marketing pela Universidade XYZ e fundador da Markup &copy, a empresa <span>vencedora dos últimos
+                    5 Prémios MarketingBR.</span>
+                </p>
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>
