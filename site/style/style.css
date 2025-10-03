@@ -1,0 +1,99 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+}
+
+.container {
+    width: 60%;
+}
+
+header {
+    background-color: #4583bb;
+    border-bottom: white solid 5px;
+    padding: 10px 0;
+    text-align: center;
+}
+header h1 {
+    text-transform: uppercase;
+    font-weight: bold;
+    color: white;
+}
+
+.principal {
+    position: relative;
+    height: 550px;
+    background-image: url(../images/people.jpg);
+    background-size: cover;
+}
+.principal img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.captura {
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    padding: 20px;
+    width: 350px;
+    right: 50px;
+    top: 30px;
+
+}
+.captura h2 {
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+.captura p {
+    margin-bottom: 20px;
+}
+.captura form input,select,input[type="button"] {
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+.captura form select {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    background-image: url(../images/arrow.jpg);
+    background-repeat: no-repeat;
+    background-position-x: calc(100% - 10px);
+    background-position-y: center;
+}
+.captura input[type="button"] {
+    background-color: #4583bb;
+    font-weight: bold;
+    color: white;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+
+.palestrante {
+    background-color: #202020;
+    padding: 30px 200px;
+}
+.palestrante img {
+    width: 150px;
+    border-radius: 5px;
+}
+.palestrante .descricao {
+    display: inline-block;
+    width: 75%;
+    color: white;
+}
+.palestrante .descricao h3,
+p {
+    margin-bottom: 40px;
+    margin-left: 30px;
+}
